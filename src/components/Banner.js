@@ -9,9 +9,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  // const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Developer","Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Software Developer","Web Developer", "Web Designer", "UI/UX Designer", "Full Stack Developer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -31,6 +32,7 @@ export const Banner = () => {
 
     if (isDeleting) {
       setDelta(prevDelta => prevDelta / 2);
+      // setDelta(prevDelta => prevDelta - 300);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -41,7 +43,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(100);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -56,7 +58,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Timothy `} <div className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></div></h1>
+                <h1>{`Hi! I'm Timothy `} <div className="txt-rotate" dataPeriod="1000" data-rotate={toRotate}><span className="wrap">{text}</span></div></h1>
                   <p>My name is Timothy Leung. I'm a 2nd year computer science student studying at McMaster University. I love trying and learning new things. </p>
 
                   <a download href="https://github.com/leungt30/resume/raw/main/Resume.pdf" style={{ textDecoration: 'none' }} ><button>MY RESUME<ArrowRightCircle size={25} /></button></a>

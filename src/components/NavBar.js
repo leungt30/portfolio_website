@@ -47,9 +47,8 @@ export const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link download href="https://github.com/leungt30/resume/raw/main/Resume.pdf" style={{ textDecoration: 'none' }} className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Resume</Nav.Link>
-              {/*<a download href="https://github.com/leungt30/resume/raw/main/Resume%20(3).pdf" style={{ textDecoration: 'none' }} ><button>MY RESUME<ArrowRightCircle size={25} /></button></a>  */}
-            </Nav>
+              <Nav.Link download href="https://github.com/leungt30/resume/raw/main/Resume.pdf" style={{ textDecoration: 'none' }} className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}>Resume</Nav.Link>
+              </Nav>
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/timothy-leung-002831232/"><img src={navIcon1} alt="linkedin" /></a>

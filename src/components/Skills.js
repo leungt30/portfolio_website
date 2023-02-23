@@ -6,6 +6,14 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import python from "../assets/img/python.png"
+import java from "../assets/img/java.png"
+import c from "../assets/img/C_Logo.png"
+import htmlCSS from "../assets/img/html_css_logo.png"
+import js from "../assets/img/JavaScript-logo.png"
+import react from "../assets/img/react.png"
+import sql from "../assets/img/sql.png"
+import haskell from "../assets/img/haskell.png"
 
 export const Skills = () => {
   const responsive = {
@@ -38,41 +46,41 @@ export const Skills = () => {
                         <p>What can I do?<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={python} alt="Image" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={java} alt="Image" />
                                 <h5>Java</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={c} alt="Image" />
                                 <h5>C</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={js} alt="Image" />
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={htmlCSS} alt="Image" />
                                 <h5>HTML/CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={react} alt="Image" />
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={sql} alt="Image" />
                                 <h5>SQL</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={haskell} alt="Image" />
                                 <h5>Haskell</h5>
                             </div>
-                            <div className="item">
+                            {/* <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Web development</h5>
-                            </div>
+                            </div> */}
                         </Carousel>
                     </div>
                 </div>
