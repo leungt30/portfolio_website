@@ -10,6 +10,7 @@ import projImgFAQ from "../assets/img/faq.avif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 
 export const Projects = () => {
 
@@ -181,6 +182,14 @@ export const Projects = () => {
                 </Tab.Container>
               </div>}
             </TrackVisibility>
+            <div style={{ textAlign: 'center' }}>
+                <h4 style={{ display: 'inline-block' }}>Check out more here:</h4>
+                  <div className="social-icon">
+                    <a href="https://github.com/leungt30">
+                      <img src={navIcon4} alt="github" style={{ verticalAlign: 'middle' }} />
+                    </a>
+                  </div>     
+            </div>
           </Col>
         </Row>
       </Container>
