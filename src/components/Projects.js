@@ -11,7 +11,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import navIcon4 from '../assets/img/nav-icon4.svg';
-import projImgAssistant from "../assets/img/siri.gif"
+import projImgAssistant from "../assets/img/siri2.gif"
 
 export const Projects = () => {
 
@@ -21,6 +21,12 @@ export const Projects = () => {
       description: "Created an Automated Rank Checker to verify participants' entry into their correct brackets",
       imgUrl: projImgVAL,
       link: "https://www.valorantshowdown.com/"
+    },    
+    {
+      title: "Virtual Assistant",
+      description: "Design & Development of a voice activated assistant acompanied with a GUI",
+      imgUrl: projImgAssistant,
+      link : "https://github.com/COMPSCI-SPRING-PROJECT/AssistantAI"
     },
     // {
     //   title: "Business Startup",
@@ -68,12 +74,7 @@ export const Projects = () => {
       imgUrl: projImgGericht,
       link: "https://restaurant-website-gules-tau.vercel.app/"
     },
-    {
-      title: "Virtual Assistant",
-      description: "Design & Development of a voice activated assistant acompanied with a GUI",
-      imgUrl: projImgAssistant,
-      link : "https://github.com/COMPSCI-SPRING-PROJECT/AssistantAI"
-    },
+
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
