@@ -1,16 +1,17 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-// import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/project-img1.png";
 import projImgVAL from "../assets/img/VALORANT1.png";
 import projImgChatGPT from "../assets/img/chatgpt1.jpg";
 import projImgGericht from "../assets/img/gericht.jpg"
-// import projImg2 from "../assets/img/project-img2.png";
-// import projImg3 from "../assets/img/project-img3.png";
+import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img3.png";
 import projImgFAQ from "../assets/img/faq.avif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import navIcon4 from '../assets/img/nav-icon4.svg';
+import projImgAssistant from "../assets/img/siri.gif"
 
 export const Projects = () => {
 
@@ -67,11 +68,12 @@ export const Projects = () => {
       imgUrl: projImgGericht,
       link: "https://restaurant-website-gules-tau.vercel.app/"
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
+    {
+      title: "Virtual Assistant",
+      description: "Design & Development of a voice activated assistant acompanied with a GUI",
+      imgUrl: projImgAssistant,
+      link : "https://github.com/COMPSCI-SPRING-PROJECT/AssistantAI"
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
