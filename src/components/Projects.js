@@ -1,11 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+// import projImg1 from "../assets/img/project-img1.png";
 import projImgVAL from "../assets/img/VALORANT1.png";
 import projImgChatGPT from "../assets/img/chatgpt1.jpg";
 import projImgGericht from "../assets/img/gericht.jpg"
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+// import projImg2 from "../assets/img/project-img2.png";
+// import projImg3 from "../assets/img/project-img3.png";
 import projImgFAQ from "../assets/img/faq.avif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -19,6 +19,7 @@ export const Projects = () => {
       title: "Valorant Showdown Co-Manager",
       description: "Created an Automated Rank Checker to verify participants' entry into their correct brackets",
       imgUrl: projImgVAL,
+      link: "https://www.valorantshowdown.com/"
     },
     // {
     //   title: "Business Startup",
@@ -52,16 +53,19 @@ export const Projects = () => {
       title: "Valorant Showdown",
       description: "Developed Website",
       imgUrl: projImgVAL,
+      link: "https://www.valorantshowdown.com/"
     },
     {
       title: "ChatGPT Intro Website",
       description: "Design & Development",
       imgUrl: projImgChatGPT,
+      link: "https://chat-gpt-website-nine.vercel.app/"
     },
     {
       title: "Gericht Restuarant Website",
       description: "Design & Development",
       imgUrl: projImgGericht,
+      link: "https://restaurant-website-gules-tau.vercel.app/"
     },
     // {
     //   title: "Business Startup",
