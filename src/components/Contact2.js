@@ -6,7 +6,8 @@ import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
   const email = 'timothyrleung@gmail.com'
-  const openEmail = () => {
+  const openEmail = (event) => {
+    event.preventDefault();
     window.location.href = `mailto:${email}`;
   }
   const formInitialDetails = {
@@ -64,8 +65,8 @@ export const Contact = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
                 <h4>Email: </h4>
-                <a href={openEmail} style={{color:"white", border:"2px", backgroundColor: "transparent", padding: "0.5rem 1rem" }}>
-                    {email}
+                <a href="#" onClick={openEmail} style={{color:"white", border:"2px", backgroundColor: "transparent", padding: "0.5rem 1rem" }}>
+                  {email}
                 </a>
            
               </div>}
