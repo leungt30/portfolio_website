@@ -6,8 +6,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
   const email = 'timothyrleung@gmail.com'
-  const openEmail = (event) => {
-    event.preventDefault();
+  const openEmail = () => {
     window.location.href = `mailto:${email}`;
   }
   const formInitialDetails = {
