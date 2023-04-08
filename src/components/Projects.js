@@ -8,6 +8,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImgFAQ from "../assets/img/faq.avif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImgMathVis from "../assets/img/mathVis.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import navIcon4 from '../assets/img/nav-icon4.svg';
@@ -28,11 +29,12 @@ export const Projects = () => {
       imgUrl: projImgAssistant,
       link : "https://github.com/COMPSCI-SPRING-PROJECT/AssistantAI"
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
+    {
+      title: "Linear Algebra Visualizer",
+      description: "Design & Development",
+      imgUrl: projImgMathVis,
+      link : "https://cs1xd3.online/ShowModulePublish?modulePublishId=98958bd3-4bb6-4c40-a897-c29ece3d34f9&fullscreen=true"
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
@@ -200,7 +202,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="bg"></img>
     </section>
   )
 }
