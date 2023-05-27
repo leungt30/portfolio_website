@@ -6,6 +6,7 @@ import projImgChatGPT from "../assets/img/chatgpt1.jpg";
 import projImgGericht from "../assets/img/gericht.jpg"
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import vs2 from "../assets/img/vs2.0.png"
 import projImgFAQ from "../assets/img/faq.avif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImgMathVis from "../assets/img/mathVis.png"
@@ -35,11 +36,7 @@ export const Projects = () => {
       imgUrl: projImgMathVis,
       link : "https://cs1xd3.online/ShowModulePublish?modulePublishId=98958bd3-4bb6-4c40-a897-c29ece3d34f9&fullscreen=true"
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
+
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
@@ -60,7 +57,7 @@ export const Projects = () => {
   const projects2 = [
     {
       title: "Valorant Showdown",
-      description: "Developed Website",
+      description: "Developed Website. NOTE: the domain is now being used for a different website",
       imgUrl: projImgVAL,
       link: "https://www.valorantshowdown.com/"
     },
@@ -76,7 +73,12 @@ export const Projects = () => {
       imgUrl: projImgGericht,
       link: "https://restaurant-website-gules-tau.vercel.app/"
     },
-
+    {
+      title: "Valorant Showdown 2.0 website",
+      description: "Design & Developer webpage for Valorant Tournament",
+      imgUrl: vs2,
+      link : "https://www.valorantshowdown.com/"
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
