@@ -4,8 +4,8 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImgVAL from "../assets/img/VALORANT1.png";
 import projImgChatGPT from "../assets/img/chatgpt1.jpg";
 import projImgGericht from "../assets/img/gericht.jpg"
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImgSirModel from "../assets/img/sirmodel.jpg";
+import projImgNeuralNetwork from "../assets/img/ai_cartoon.jpg";
 import vs2 from "../assets/img/vs2.0.png"
 import projImgFAQ from "../assets/img/faq.avif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -17,7 +17,7 @@ import projImgAssistant from "../assets/img/siri2.gif"
 
 export const Projects = () => {
 
-  const projects1 = [
+  const softwareSection = [
     {
       title: "Valorant Showdown Co-Manager",
       description: "Created an Automated Rank Checker to verify participants' entry into their correct brackets",
@@ -37,16 +37,18 @@ export const Projects = () => {
       link : "https://cs1xd3.online/ShowModulePublish?modulePublishId=98958bd3-4bb6-4c40-a897-c29ece3d34f9&fullscreen=true"
     },
 
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
+    {
+      title: "Infectious Disease Model",
+      description: "Improved upon the SIR model. I developed my own scientific computation model to illustrate how a population reacts to an infectious disease with different properties. Changable parameters include: infection rate, recovery rate, birth rate, death rate, vaccination rate, vaccination efficiency, vaccination duration",
+      imgUrl: projImgSirModel,
+      link : "https://github.com/leungt30/SIRV-Model"
+    },
+    {
+      title: "Neural Network Engine",
+      description: "Created a neural network from scratch. Project includes neurons and layers. Still in progress.",
+      imgUrl: projImgNeuralNetwork,
+      link : "https://github.com/leungt30"
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
@@ -54,7 +56,7 @@ export const Projects = () => {
     // },
   ];
 
-  const projects2 = [
+  const websiteSection = [
     {
       title: "Valorant Showdown",
       description: "Developed Website. NOTE: the domain is now being used for a different website",
@@ -91,7 +93,7 @@ export const Projects = () => {
     // },
   ];
 
-  const projects3 = [
+  const otherSection = [
     {
       title: "AI Q&A Chat Bot",
       description: "Created and Trained an AI chatbot to answer questions FAQ questions about me",
@@ -150,7 +152,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects2.map((project2, index) => {
+                          websiteSection.map((project2, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -164,7 +166,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                     <Row>
                         {
-                          projects1.map((project1, index) => {
+                          softwareSection.map((project1, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -178,7 +180,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">
                     <Row>
                         {
-                          projects3.map((project3, index) => {
+                          otherSection.map((project3, index) => {
                             return (
                               <ProjectCard
                                 key={index}

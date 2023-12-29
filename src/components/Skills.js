@@ -14,6 +14,7 @@ import js from "../assets/img/JavaScript-logo.png"
 import react from "../assets/img/react.png"
 import sql from "../assets/img/sql.png"
 import haskell from "../assets/img/haskell.png"
+import cPlusPlus from "../assets/img/c-plus-plus-logo.png"
 
 export const Skills = () => {
   const responsive = {
@@ -43,7 +44,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>What can I do?<br></br></p>
+                        <p>What have I worked with previously?<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={python} alt="Image" />
@@ -76,6 +77,10 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={haskell} alt="Image" />
                                 <h5>Haskell</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cPlusPlus} alt="Image" />
+                                <h5>C++</h5>
                             </div>
                             {/* <div className="item">
                                 <img src={meter1} alt="Image" />
