@@ -7,6 +7,7 @@ import projImgGericht from "../assets/img/gericht.jpg"
 import projImgSirModel from "../assets/img/sirmodel.jpg";
 import projImgNeuralNetwork from "../assets/img/ai_cartoon.jpg";
 import projImgDeltahacks from "../assets/img/deltahacks logo.png";
+import projImgCarla from "../assets/img/carla.jpg";
 
 import vs2 from "../assets/img/vs2.0.png"
 import projImgFAQ from "../assets/img/faq.avif"
@@ -106,11 +107,11 @@ export const Projects = () => {
       description: "Planned and executed everything neccessary to run a hackathon with over 700 attendees. My team and I worked to organize all the merchendise, food distrubution, venue planning, prize planning, and handled some sponsorship deals to make the hackathon possible.",
       imgUrl: projImgDeltahacks,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
+    {
+      title: "Research assistant",
+      description: "Design & Development of software tools used by researchers to simulate vehicles and transportation systems in CARLA. ",
+      imgUrl: projImgCarla,
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
