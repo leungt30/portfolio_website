@@ -6,6 +6,8 @@ import projImgChatGPT from "../assets/img/chatgpt1.jpg";
 import projImgGericht from "../assets/img/gericht.jpg"
 import projImgSirModel from "../assets/img/sirmodel.jpg";
 import projImgNeuralNetwork from "../assets/img/ai_cartoon.jpg";
+import projImgDeltahacks from "../assets/img/deltahacks logo.png";
+
 import vs2 from "../assets/img/vs2.0.png"
 import projImgFAQ from "../assets/img/faq.avif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -99,11 +101,11 @@ export const Projects = () => {
       description: "Created and Trained an AI chatbot to answer questions FAQ questions about me",
       imgUrl: projImgFAQ,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
+    {
+      title: "Deltahacks 10 Logistics Executive",
+      description: "Planned and executed everything neccessary to run a hackathon with over 700 attendees. My team and I worked to organize all the merchendise, food distrubution, venue planning, prize planning, and handled some sponsorship deals to make the hackathon possible.",
+      imgUrl: projImgDeltahacks,
+    },
     // {
     //   title: "Business Startup",
     //   description: "Design & Development",
